@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/display"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="13dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="13dp"
+        android:gravity="right" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:id="@+id/sayi_1"
+        android:layout_below="@+id/display"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:id="@+id/sayi_2"
+        android:layout_alignTop="@+id/sayi_1"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:id="@+id/sayi_3"
+        android:layout_alignTop="@+id/sayi_2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:id="@+id/sayi_4"
+        android:layout_below="@+id/sayi_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:id="@+id/sayi_5"
+        android:layout_alignTop="@+id/sayi_4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        android:id="@+id/sayi_6"
+        android:layout_alignTop="@+id/sayi_5"
+        android:layout_alignLeft="@+id/sayi_3"
+        android:layout_alignStart="@+id/sayi_3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:id="@+id/sayi_7"
+        android:layout_below="@+id/sayi_4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:id="@+id/sayi_8"
+        android:layout_alignTop="@+id/sayi_7"
+        android:layout_alignLeft="@+id/sayi_5"
+        android:layout_alignStart="@+id/sayi_5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:id="@+id/sayi_9"
+        android:layout_alignTop="@+id/sayi_8"
+        android:layout_alignLeft="@+id/hesapla"
+        android:layout_alignStart="@+id/hesapla" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/sayi_0"
+        android:layout_alignTop="@+id/sayi_sil"
+        android:layout_alignLeft="@+id/sayi_8"
+        android:layout_alignStart="@+id/sayi_8" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:id="@+id/sayi_carp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sayi_topla" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:id="@+id/sayi_bol"
+        android:layout_below="@+id/sayi_0"
+        android:layout_alignRight="@+id/sayi_carp"
+        android:layout_alignEnd="@+id/sayi_carp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/sayi_topla"
+        android:layout_alignTop="@+id/sayi_bol"
+        android:layout_alignLeft="@+id/sayi_0"
+        android:layout_alignStart="@+id/sayi_0" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesapla"
+        android:id="@+id/hesapla"
+        android:layout_alignTop="@+id/sayi_0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/sayi_cikar"
+        android:layout_below="@+id/sayi_0"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:id="@+id/sayi_sil"
+        android:layout_below="@+id/sayi_7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
